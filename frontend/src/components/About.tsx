@@ -68,11 +68,13 @@ const About = () => {
                   JS
                 </AvatarFallback>
               </Avatar>
-              <div>
-                <h3 className="text-2xl font-semibold mb-2">Abhay Kumar</h3>
-                <p className="text-muted-foreground">
-                  Backend Developer | Coder
-                </p>
+                    <div className="flex justify-center">
+                <div className="text-center">
+                  <h3 className="text-2xl font-semibold mb-2">Abhay Kumar</h3>
+                  <p className="text-muted-foreground">
+                    Backend Developer | Coder
+                  </p>
+                </div>
               </div>
             </div>
 
