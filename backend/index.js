@@ -32,11 +32,11 @@ app.use("/api", authRoutes); // Optional: Use "/api" to avoid conflicts
 // Connect to database once
 
 // ✅ Export a function for Vercel
-// export default app;
+export default app;
 
-const PORT = process.env.PORT || 5000;
+// const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, () => {
-  console.log(`Server is running on port: ${PORT}`);
-;
-});
+// app.listen(PORT, () => {
+//   console.log(`Server is running on port: ${PORT}`);
+// ;
+// });
