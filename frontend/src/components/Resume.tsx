@@ -12,7 +12,7 @@ const Resume = () => {
 
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-lg mb-8 text-muted-foreground">
-            Download my resume to learn more about my skills, and education.
+            Download my resume to learn more about my skills and education.
           </p>
 
           <div className="bg-card border border-border rounded-lg p-8 mb-8 flex flex-col items-center">
