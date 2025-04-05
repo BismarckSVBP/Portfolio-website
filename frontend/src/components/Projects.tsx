@@ -10,8 +10,8 @@ const projects = [
     image: "train-tracker.png",
     tags: ["JavaScript", "TypeScript", "NodeJS", "React"],
     githubUrl:
-      "https://github.com/BismarckSVBP/Train-Running-Status-and-PNR-Checker-FullStack-Project-in-MERN", // Replace with actual link
-    liveUrl: "https://train-tracker-ashy.vercel.app/", // Replace with actual link
+      "https://github.com/BismarckSVBP/Train-Running-Status-and-PNR-Checker-FullStack-Project-in-MERN",
+    liveUrl: "https://train-tracker-ashy.vercel.app/",
   },
   {
     id: 2,
@@ -21,19 +21,18 @@ const projects = [
     image: "authentication.png",
     tags: ["JavaScript", "NodeJS", "React", "MongoDB"],
     githubUrl:
-      "https://github.com/BismarckSVBP/Authentication-and-contactUs-template-MERN-project", // Replace with actual link
-    liveUrl: "https://authentication-frontend-khaki-eta.vercel.app/login", // Replace with actual link
+      "https://github.com/BismarckSVBP/Authentication-and-contactUs-template-MERN-project",
+    liveUrl: "https://authentication-frontend-khaki-eta.vercel.app/login",
   },
-   {
+  {
     id: 3,
     title: "Abhay's Portfolio Website",
     description:
       "A personal portfolio website showcasing my projects, skills, and achievements. Built with modern web technologies and responsive design for an engaging user experience.",
-    image:
-      "portfolio.png",
+    image: "portfolio.png",
     tags: ["React", "TailwindCSS", "TypeScript", "NodeJS"],
-    githubUrl: "https://github.com/BismarckSVBP/Portfolio-website", // Replace with actual link
-    liveUrl: "https://portfolio-website-frontend-phi.vercel.app/", // Replace with actual link or leave it blank
+    githubUrl: "https://github.com/BismarckSVBP/Portfolio-website",
+    liveUrl: "https://portfolio-website-frontend-phi.vercel.app/",
   },
   {
     id: 4,
@@ -43,8 +42,8 @@ const projects = [
     image:
       "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&auto=format&fit=crop",
     tags: ["JavaScript", "EJS", "NodeJS", "MongoDB"],
-    githubUrl: "https://github.com/BismarckSVBP/Url-shortner-Project-with-auth", // Replace with actual link
-    liveUrl: 'https://portfolio-website-frontend-phi.vercel.app/not-found',   // Replace with actual link (or leave blank if no live demo)
+    githubUrl: "https://github.com/BismarckSVBP/Url-shortner-Project-with-auth",
+    liveUrl: "", // No live demo here
   },
 ];
 
@@ -54,7 +53,7 @@ const Projects = () => {
       id="projects"
       className="bg-gradient-to-b from-background to-background/95 py-0"
     >
-      <div className="section-container ">
+      <div className="section-container">
         <h2 className="section-title">Projects</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -98,14 +97,17 @@ const Projects = () => {
                     <Github className="w-5 h-5 mr-1" />
                     <span>Code</span>
                   </a>
-                  <a
-                    href={project.liveUrl}
-                    className="flex items-center text-muted-foreground hover:text-primary transition-colors"
-                    aria-label="View live demo"
-                  >
-                    <ExternalLink className="w-5 h-5 mr-1" />
-                    <span>Demo</span>
-                  </a>
+
+                  {project.liveUrl && (
+                    <a
+                      href={project.liveUrl}
+                      className="flex items-center text-muted-foreground hover:text-primary transition-colors"
+                      aria-label="View live demo"
+                    >
+                      <ExternalLink className="w-5 h-5 mr-1" />
+                      <span>Demo</span>
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
