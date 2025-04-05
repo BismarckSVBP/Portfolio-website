@@ -8,33 +8,32 @@ dotenv.config();
 
 const app = express();
 
-// Ensure CLIENT_URL exists
+// ⚠️ Check CLIENT_URL
 if (!process.env.CLIENT_URL) {
-	console.error("⚠️ CLIENT_URL is not set in the environment variables.");
-	process.exit(1);
+  console.error("⚠️ CLIENT_URL is not set in the environment variables.");
+  process.exit(1);
 }
 
+// ✅ Middlewares
 app.use(
-	cors({
-		origin: process.env.CLIENT_URL,
-		credentials: true,
-		optionsSuccessStatus: 200,
-	})
+  cors({
+    origin: process.env.CLIENT_URL,
+    credentials: true,
+    optionsSuccessStatus: 200,
+  })
 );
-
 app.use(express.json());
 
-// Routes
-app.use("/api", authRoutes); // Optional: Use "/api" to avoid conflicts
+// ✅ Routes
+app.use("/api", authRoutes);
 
-// Connect to database once
-
-// ✅ Export a function for Vercel
+// ✅ Export app for Vercel
 export default app;
 
-// const PORT = process.env.PORT || 5000;
-
-// app.listen(PORT, () => {
-//   console.log(`Server is running on port: ${PORT}`);
-// ;
-// });
+// ✅ Optional local server (comment out when deploying to Vercel)
+const PORT = process.env.PORT || 5000;
+if (process.env.NODE_ENV !== "production") {
+  app.listen(PORT, () => {
+    console.log(`🚀 Server running on http://localhost:${PORT}`);
+  });
+}
