@@ -21,6 +21,7 @@ const Navbar = () => {
     { name: "About", href: "#about" },
     { name: "Projects", href: "#projects" },
     { name: "Resume", href: "#resume" },
+    { name: "Blog", href: "#blog" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -32,11 +33,9 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex-shrink-0">
-            <a href="#home" className="text-2xl font-bold text-primary">
-              Abhay's Portfolio
-            </a>
-          </div>
+          <a href="#home" className="text-2xl font-bold text-primary">
+            Abhay's Portfolio
+          </a>
 
           {/* Desktop menu */}
           <div className="hidden md:block">
@@ -57,7 +56,7 @@ const Navbar = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md text-foreground hover:text-primary focus:outline-none"
+              className="p-2 rounded-md text-foreground hover:text-primary focus:outline-none"
             >
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -68,7 +67,7 @@ const Navbar = () => {
       {/* Mobile menu */}
       {isMenuOpen && (
         <div className="md:hidden bg-card/95 backdrop-blur-sm">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <div className="px-4 pt-4 pb-3 space-y-1">
             {navLinks.map((link) => (
               <a
                 key={link.name}
