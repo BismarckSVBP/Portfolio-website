@@ -33,7 +33,7 @@ const projects = [
       "portfolio.png",
     tags: ["React", "TailwindCSS", "TypeScript", "NodeJS"],
     githubUrl: "https://github.com/BismarckSVBP/Portfolio-website", // Replace with actual link
-    liveUrl: "https://abhay-portfolio.vercel.app/", // Replace with actual link or leave it blank
+    liveUrl: "https://portfolio-website-frontend-phi.vercel.app/", // Replace with actual link or leave it blank
   },
   {
     id: 4,
@@ -44,7 +44,7 @@ const projects = [
       "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&auto=format&fit=crop",
     tags: ["JavaScript", "EJS", "NodeJS", "MongoDB"],
     githubUrl: "https://github.com/BismarckSVBP/Url-shortner-Project-with-auth", // Replace with actual link
-    // liveUrl: '#',   // Replace with actual link (or leave blank if no live demo)
+    liveUrl: 'https://portfolio-website-frontend-phi.vercel.app/not-found',   // Replace with actual link (or leave blank if no live demo)
   },
 ];
 
