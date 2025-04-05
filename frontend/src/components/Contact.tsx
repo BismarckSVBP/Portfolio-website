@@ -48,7 +48,7 @@ const Contact = () => {
       });
 
       if (response.ok) {
-        toast.success("Message sent successfully! We'll get back to you soon.");
+        toast.success("Message sent successfully! I'll get back to you soon.");
         setFormData({ name: "", email: "", message: "" });
         navigate("/");
       } else {
@@ -136,6 +136,7 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
+                  placeholder="Enter your name"
                   className="w-full px-4 py-2 bg-secondary border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50"
                 />
               </div>
@@ -154,6 +155,7 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
+                  placeholder="Enter your email"
                   className="w-full px-4 py-2 bg-secondary border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50"
                 />
               </div>
@@ -171,6 +173,7 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleChange}
                   required
+                  placeholder="Write your message here..."
                   rows={5}
                   className="w-full px-4 py-2 bg-secondary border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50 resize-none"
                 ></textarea>
