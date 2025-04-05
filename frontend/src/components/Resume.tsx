@@ -13,7 +13,7 @@ const Resume = () => {
           </p>
 
           <div className="bg-card border border-border rounded-lg p-8 mb-8 flex flex-col items-center">
-            <h3 className="text-2xl font-semibold mb-4">Abhay Kumar</h3>
+            <h3 className="text-2xl font-semibold mb-2">Abhay Kumar</h3>
             <p className="text-muted-foreground mb-4">Backend Developer | Coder</p>
 
             <a href="/Abhay's resume.pdf" download>
@@ -27,7 +27,7 @@ const Resume = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-secondary/30 rounded-lg p-6">
               <h4 className="font-medium mb-2">Languages</h4>
-              <ul className="text-sm text-muted-foreground text-left">
+              <ul className="text-sm text-muted-foreground text-left space-y-1">
                 <li>C, C++</li>
                 <li>JavaScript, TypeScript</li>
               </ul>
@@ -35,7 +35,7 @@ const Resume = () => {
 
             <div className="bg-secondary/30 rounded-lg p-6">
               <h4 className="font-medium mb-2">DSA & Platforms</h4>
-              <ul className="text-sm text-muted-foreground text-left">
+              <ul className="text-sm text-muted-foreground text-left space-y-1">
                 <li>Proficient in DSA using C++</li>
                 <li>Node.js Runtime</li>
               </ul>
@@ -43,7 +43,7 @@ const Resume = () => {
 
             <div className="bg-secondary/30 rounded-lg p-6">
               <h4 className="font-medium mb-2">Frameworks & Databases</h4>
-              <ul className="text-sm text-muted-foreground text-left">
+              <ul className="text-sm text-muted-foreground text-left space-y-1">
                 <li>React, Express, Next.js</li>
                 <li>MongoDB, MySQL</li>
               </ul>
