@@ -5,7 +5,7 @@ const Resume = () => {
   return (
     <section
       id="resume"
-      className="bg-gradient-to-b from-background to-background/95 py-16 md:py-20"
+      className="bg-gradient-to-b from-background to-background/95 py-0"
     >
       <div className="section-container">
         <h2 className="section-title">Resume</h2>
