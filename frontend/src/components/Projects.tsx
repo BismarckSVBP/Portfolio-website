@@ -24,15 +24,15 @@ const projects = [
       "https://github.com/BismarckSVBP/Authentication-and-contactUs-template-MERN-project", // Replace with actual link
     liveUrl: "https://authentication-frontend-khaki-eta.vercel.app/login", // Replace with actual link
   },
-  {
+   {
     id: 3,
     title: "Abhay's Portfolio Website",
     description:
       "A personal portfolio website showcasing my projects, skills, and achievements. Built with modern web technologies and responsive design for an engaging user experience.",
     image:
-      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&auto=format&fit=crop",
+      "portfolio.png",
     tags: ["React", "TailwindCSS", "TypeScript", "NodeJS"],
-    githubUrl: "https://github.com/BismarckSVBP/Abhay-Portfolio", // Replace with actual link
+    githubUrl: "https://github.com/BismarckSVBP/Portfolio-website", // Replace with actual link
     liveUrl: "https://abhay-portfolio.vercel.app/", // Replace with actual link or leave it blank
   },
   {
