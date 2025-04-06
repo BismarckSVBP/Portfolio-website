@@ -58,7 +58,7 @@
 // export default Resume;
 import { Download } from "lucide-react";
 import { Button } from "./ui/button";
-import toast, { Toaster } from "react-hot-toast";
+import { toast } from "sonner";
 
 const Resume = () => {
   const handleDownload = async () => {
@@ -90,8 +90,7 @@ const Resume = () => {
       id="resume"
       className="bg-gradient-to-b from-background to-background/95 py-16 md:py-20"
     >
-      <Toaster position="top-right" />
-
+      <div className="absolute inset-0 bg-gradient-to-b from-background/95 to-background/0" />
       <div className="section-container">
         <h2 className="section-title">Resume</h2>
 
