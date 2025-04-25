@@ -138,7 +138,6 @@
 
 
 
-import {react} from 'React';
 import {
   Database,
   Cpu,
