@@ -65,7 +65,7 @@ const Resume = () => {
     const toastId = toast.loading("Downloading resume...");
 
     try {
-      const response = await fetch("/Abhay's resume3.pdf");
+      const response = await fetch("/Abhay's resume4.pdf");
       if (!response.ok) throw new Error("Failed to fetch resume");
 
       const blob = await response.blob();
