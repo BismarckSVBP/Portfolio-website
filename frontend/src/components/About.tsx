@@ -134,6 +134,11 @@
 // };
 
 // export default About;
+
+
+
+
+import {react} from 'React';
 import {
   Database,
   Cpu,
