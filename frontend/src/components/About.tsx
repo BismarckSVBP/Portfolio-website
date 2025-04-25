@@ -213,22 +213,18 @@ const About = () => {
                 </div>
               </div>
             </div>
-
-
-
-
-
             <div className="animate-fade-in">
               <p className="text-lg mb-6">
-                I am a second-year Computer Science and Engineering student at MMMUT Gorakhpur with a strong interest in full-stack web development. I have experience working with the MERN stack, including MongoDB, Express.js, React.js, and Node.js, as well as Tailwind CSS for frontend styling.
+                  I am a second-year Computer Science and Engineering student at MMMUT Gorakhpur with a strong foundation in full-stack web development, particularly using the MERN stack (MongoDB, Express.js, React.js, and Node.js). I also utilize Tailwind CSS for building clean and responsive user interfaces.
               </p>
               <p className="text-lg mb-6">
-                I enjoy building real-world applications and have developed projects such as a radar-based object detection system. Despite financial challenges, I remain focused and committed to learning and improving my skills through hands-on practice and participation in college-level competitions.
+                  I have developed and deployed real-world applications, including a Vite-based MERN project hosted on Vercel, where I tackled challenges like CORS issues, third-party API limitations, and performance optimizations. I am also actively engaged in competitive programming on platforms like LeetCode, Codeforces, and CodeChef to enhance my problem-solving skills.
               </p>
               <p className="text-lg">
-                My goal is to become a skilled software developer and contribute to meaningful and impactful technology solutions.
+                  Despite financial constraints, I remain highly motivated and dedicated to continuous learning, aiming to become a skilled software developer who contributes to impactful and scalable tech solutions.
               </p>
             </div>
+
           </div>
 
           {/* Right Column */}
