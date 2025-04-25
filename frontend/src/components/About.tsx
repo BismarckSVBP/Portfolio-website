@@ -184,7 +184,7 @@ const About = () => {
     },
     {
       category: "Frameworks & Libraries",
-      items: ["Express.js", "React.js", "Next.js", "Tailwind CSS"],
+      items: ["Express.js", "React.js", "Next.js(Basics only)", "Tailwind CSS"],
       icon: <Library className="w-6 h-6 text-primary" />,
     },
   ];
