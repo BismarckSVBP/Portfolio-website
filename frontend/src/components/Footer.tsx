@@ -13,7 +13,7 @@ const Footer = () => {
             Abhay's Portfolio
             </a>
             <p className="text-muted-foreground mt-2 max-w-md">
-              Backend developer specializing in creating robust and scalable server-side solutions with the MERN stack.
+              Full-stack developer specializing in problem-solving, competitive programming, data structures, algorithms, and scalable database solutions with MySQL and MongoDB.
             </p>
           </div>
           
