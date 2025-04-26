@@ -20,8 +20,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-            Building robust server-side solutions, APIs, and database architectures 
-            that power modern web applications.
+            Problem-solving full-stack developer skilled in competitive programming, data structures, algorithms, and database management with MySQL and MongoDB
           </p>
           
           <div className="flex flex-wrap gap-4 mb-12">
