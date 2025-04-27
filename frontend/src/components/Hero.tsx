@@ -3,7 +3,7 @@ import { ArrowDown } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="home" className="flex items-center relative bg-background py-0">
+    <section id="home" className="min-h-screen flex items-center relative bg-background py-0">
       <div className="absolute inset-0 bg-gradient-to-b from-background to-background/70 z-0"></div>
       
       {/* Animated background elements */}
