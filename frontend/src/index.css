@@ -94,3 +94,35 @@
     color: hsl(var(--accent));
   }
 }
+
+
+
+  
+
+
+
+/* Add this to your global styles */
+@keyframes menuOpen {
+  0% {
+    transform: translateY(-100%);
+  }
+  60% {
+    transform: translateY(30%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes menuClose {
+  0% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
