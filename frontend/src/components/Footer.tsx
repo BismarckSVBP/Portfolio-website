@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <a href="#home" className="text-2xl font-bold text-primary">
-            Abhay's Portfolio
+            Abhay Kumar
             </a>
             <p className="text-muted-foreground mt-2 max-w-md">
               Full-stack developer specializing in problem-solving, competitive programming, data structures, algorithms, and scalable database solutions with MySQL and MongoDB.
