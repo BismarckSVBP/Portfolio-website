@@ -2,8 +2,18 @@ import { Github, ExternalLink } from "lucide-react";
 
 // Mock data - this would come from the backend in the real implementation
 const projects = [
-  {
+   {
     id: 1,
+    title: "SOS Alert",
+    description:
+      "A real-time emergency response platform enabling live video/audio streaming with WebRTC, real-time location tracking via Google Maps API, and automated SOS alerts to contacts. Includes OTP-based authentication, admin dashboard, and secure data handling.",
+    image: "sos-alert.png",
+    tags: ["JavaScript", "NodeJS", "React", "MongoDB", "WebRTC", "Socket.IO"],
+    githubUrl: "https://github.com/BismarckSVBP/sos-alert",
+    liveUrl: "https://sos-alert-beta.vercel.app/",
+  },
+  {
+    id: 2,
     title: "Train Tracker Website",
     description:
       "Implemented real-time train tracking using live location APIs, a feedback form, and mock interfaces for PNR status and coach layout. Designed full frontend/backend flow for future API integration.",
@@ -13,8 +23,9 @@ const projects = [
       "https://github.com/BismarckSVBP/Train-Running-Status-and-PNR-Checker-FullStack-Project-in-MERN",
     liveUrl: "https://train-tracker-ashy.vercel.app/",
   },
+  
   {
-    id: 2,
+    id: 3,
     title: "Authentication through OTP Verification",
     description:
       "Secure signup and login system with email OTP verification, password reset functionality, and protected routes. Includes a responsive contact form with backend integration.",
@@ -25,7 +36,7 @@ const projects = [
     liveUrl: "https://authentication-frontend-khaki-eta.vercel.app/login",
   },
   {
-    id: 3,
+    id: 4,
     title: "Abhay's Portfolio Website",
     description:
       "A personal portfolio website showcasing my projects, skills, and achievements. Built with modern web technologies and responsive design for an engaging user experience.",
@@ -34,17 +45,7 @@ const projects = [
     githubUrl: "https://github.com/BismarckSVBP/Portfolio-website",
     liveUrl: "https://portfolio-website-frontend-phi.vercel.app/",
   },
-  {
-    id: 4,
-    title: "URL Shortener Website",
-    description:
-      "Developed a secure URL shortener using JWT, short-id for unique links, and MongoDB for storage. Tracked analytics like click events and dynamically rendered data using EJS.",
-    image:
-      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&auto=format&fit=crop",
-    tags: ["JavaScript", "EJS", "NodeJS", "MongoDB"],
-    githubUrl: "https://github.com/BismarckSVBP/Url-shortner-Project-with-auth",
-    liveUrl: "", // No live demo here
-  },
+  
 ];
 
 const Projects = () => {
