@@ -7,7 +7,7 @@ const projects = [
     title: "SOS Alert",
     description:
       "A real-time emergency response platform enabling live video/audio streaming with WebRTC, real-time location tracking via Google Maps API, and automated SOS alerts to contacts. Includes OTP-based authentication, admin dashboard, and secure data handling.",
-    image: "sos-alert.png",
+    image: "Screenshot 2025-08-13 170039.png",
     tags: ["JavaScript", "NodeJS", "React", "MongoDB", "WebRTC", "Socket.IO"],
     githubUrl: "https://github.com/BismarckSVBP/sos-alert",
     liveUrl: "https://sos-alert-beta.vercel.app/",
