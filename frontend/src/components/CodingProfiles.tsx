@@ -69,8 +69,8 @@ const CodingProfiles = () => {
           <div className="bg-card p-6 rounded-lg border border-border animate-fade-in">
             <h3 className="text-xl font-semibold mb-4">Stats & Highlights</h3>
             <ul className="list-disc list-inside text-muted-foreground space-y-2">
-              <li>⭐ 250+ problems solved on LeetCode</li>
-              <li>🏅 2⭐ CodeChef rated coder</li>
+              <li>⭐ 350+ problems solved on LeetCode</li>
+              <li>🏅 3⭐ CodeChef rated coder</li>
               <li>🔥 Newbie on Codeforces</li>
               <li>💡 Focused on data structures, algorithms, and problem-solving</li>
               <li>🚀 Actively participating in contests & challenges</li>
