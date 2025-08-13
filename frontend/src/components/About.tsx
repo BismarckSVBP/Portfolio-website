@@ -219,7 +219,7 @@ const About = () => {
             </div>
             <div className="animate-fade-in">
               <p className="text-lg mb-6">
-                  I am a second-year Computer Science and Engineering student at MMMUT Gorakhpur with a strong foundation in full-stack web development, particularly using the MERN stack (MongoDB, Express.js, React.js, and Node.js). I also utilize Tailwind CSS for building clean and responsive user interfaces.
+                  I am a 3rd-year Computer Science and Engineering student at MMMUT Gorakhpur with a strong foundation in full-stack web development, particularly using the MERN stack (MongoDB, Express.js, React.js, and Node.js). I also utilize Tailwind CSS for building clean and responsive user interfaces.
               </p>
               <p className="text-lg mb-6">
                   I have developed and deployed real-world applications, including a Vite-based MERN project hosted on Vercel, where I tackled challenges like CORS issues, third-party API limitations, and performance optimizations. I am also actively engaged in competitive programming on platforms like LeetCode, Codeforces, and CodeChef to enhance my problem-solving skills.
