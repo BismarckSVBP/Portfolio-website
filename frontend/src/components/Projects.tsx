@@ -21,7 +21,7 @@ const projects = [
     tags: ["JavaScript", "TypeScript", "NodeJS", "React"],
     githubUrl:
       "https://github.com/BismarckSVBP/Train-Running-Status-and-PNR-Checker-FullStack-Project-in-MERN",
-    liveUrl: "https://train-tracker-ashy.vercel.app/",
+    liveUrl: "https://train-tracker-beta.vercel.app/",
   },
   
   {
@@ -32,7 +32,7 @@ const projects = [
     image: "authentication.png",
     tags: ["JavaScript", "NodeJS", "React", "MongoDB"],
     githubUrl:
-      "https://github.com/BismarckSVBP/Authentication-and-contactUs-template-MERN-project",
+      "https://github.com/BismarckSVBP/train-tracker",
     liveUrl: "https://authentication-frontend-khaki-eta.vercel.app/login",
   },
   {
