@@ -1,4 +1,4 @@
-import { Code2, ExternalLink, Trophy } from "lucide-react";
+import { Code2, ExternalLink, Trophy, Award } from "lucide-react";
 
 const CodingProfiles = () => {
   return (
@@ -70,7 +70,7 @@ const CodingProfiles = () => {
 
               {/* Codolio */}
               <div className="flex items-start">
-                <ExternalLink className="w-5 h-5 text-primary mt-1 mr-3" />
+                <Award className="w-5 h-5 text-primary mt-1 mr-3" />
                 <div>
                   <h4 className="font-medium">Codolio</h4>
                   <a
@@ -93,7 +93,8 @@ const CodingProfiles = () => {
               <li>⭐ 480+ problems solved on LeetCode</li>
               <li>🏅 CodeChef: ★★★ (Max Rating: 1670)</li>
               <li>🔥 Codeforces: Pupil (Max Rating: 1268)</li>
-              <li>🎯 TCS CodeVita Season 13: R2 Rank 1763 ❤️‍🔥</li>
+              <li>🏅 Codolio: <span className="font-semibold">Elite</span></li>
+              <li>🎯 TCS CodeVita Season 13: R2 Rank 1763</li>
               <li>🏆 Secured 2nd Rank in a GitHub Event</li>
               <li>💡 Strong in DSA, competitive programming & problem-solving</li>
             </ul>
