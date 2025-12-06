@@ -149,49 +149,69 @@ import {
 import { Avatar, AvatarImage, AvatarFallback } from "./ui/avatar";
 
 const About = () => {
-  const skills = [
-    {
-      category: "Languages",
-      items: ["C", "C++", "JavaScript", "TypeScript"],
-      icon: <FileCode className="w-6 h-6 text-primary" />,
-    },
-    {
-      category: "Runtime Environments",
-      items: ["Node.js"],
-      icon: <Cpu className="w-6 h-6 text-primary" />,
-    },
-    {
-      category: "Data Structures & Algorithms",
-      items: ["Arrays", "Linked Lists", "Stacks", "Queues", "Trees", "Graphs"],
-      icon: <Layers className="w-6 h-6 text-primary" />,
-    },
-    {
-      category: "Database",
-      items: [
-        "MongoDB",
-        "MySQL",
-        "Mongoose ODM",
-        "Database Design",
-        "Data Modeling",
-      ],
-      icon: <Database className="w-6 h-6 text-primary" />,
-    },
-    {
-      category: "API Development",
-      items: [
-        "RESTful APIs",
-        "JWT Authentication",
-        "API Security",
-        "Documentation",
-      ],
-      icon: <ShieldCheck className="w-6 h-6 text-primary" />,
-    },
-    {
-      category: "Frameworks & Libraries",
-      items: ["Express.js", "React.js", "Next.js(Basics only)", "Tailwind CSS"],
-      icon: <Library className="w-6 h-6 text-primary" />,
-    },
-  ];
+ const skills = [
+  {
+    category: "Programming Languages",
+    items: ["C", "C++", "JavaScript", "TypeScript", "Python"],
+    icon: <FileCode className="w-6 h-6 text-primary" />,
+  },
+  {
+    category: "Backend Development",
+    items: [
+      "Node.js",
+      "Express.js",
+      "REST APIs",
+      "Microservices",
+      "API Gateway",
+      "Event-Driven Architecture",
+      "Service-to-Service Communication",
+      "Load Balancing",
+    ],
+    icon: <Cpu className="w-6 h-6 text-primary" />,
+  },
+  {
+    category: "Frontend & UI",
+    items: ["React.js", "Next.js", "Tailwind CSS", "HTML", "CSS"],
+    icon: <Library className="w-6 h-6 text-primary" />,
+  },
+  {
+    category: "Real-Time Technologies",
+    items: ["WebRTC", "Socket.IO", "WebSockets"],
+    icon: <Layers className="w-6 h-6 text-primary" />,
+  },
+  {
+    category: "Databases",
+    items: ["MongoDB", "MySQL", "PostgreSQL"],
+    icon: <Database className="w-6 h-6 text-primary" />,
+  },
+  {
+    category: "DevOps & Cloud",
+    items: [
+      "Docker",
+      "Docker Compose",
+      "CI/CD (GitHub Actions)",
+      "Version Control (Git, GitHub)",
+    ],
+    icon: <ShieldCheck className="w-6 h-6 text-primary" />,
+  },
+  {
+    category: "Tools & Integrations",
+    items: ["Cloudinary", "Google Maps API", "Postman"],
+    icon: <ShieldCheck className="w-6 h-6 text-primary" />,
+  },
+  {
+    category: "Core CS Fundamentals",
+    items: [
+      "DSA (C++)",
+      "Operating Systems",
+      "DBMS",
+      "Computer Networking",
+      "OOP",
+      "Basic System Design"
+    ],
+    icon: <Layers className="w-6 h-6 text-primary" />,
+  },
+];
 
   return (
     <section id="about" className="bg-background relative py-0">
