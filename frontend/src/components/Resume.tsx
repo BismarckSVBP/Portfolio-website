@@ -1,4 +1,62 @@
-import { Download, FileText, CheckCircle2 } from "lucide-react";
+// import { Download } from "lucide-react";
+// import { Button } from "./ui/button";
+
+// const Resume = () => {
+//   return (
+//     <section id="resume" className="bg-gradient-to-b from-background to-background/95 py-16 md:py-20">
+//       <div className="section-container">
+//         <h2 className="section-title">Resume</h2>
+
+//         <div className="max-w-3xl mx-auto text-center">
+//           <p className="text-lg mb-8 text-muted-foreground">
+//             Download my resume to learn more about my skills and education.
+//           </p>
+
+//           <div className="bg-card border border-border rounded-lg p-8 mb-8 flex flex-col items-center">
+//             <h3 className="text-2xl font-semibold mb-2">Abhay Kumar</h3>
+//             <p className="text-muted-foreground mb-4">Backend Developer | Coder</p>
+
+//             <a href="/Abhay's resume.pdf" download>
+//               <Button variant="default" size="lg" className="group">
+//                 <Download className="mr-2 group-hover:animate-bounce" />
+//                 Download Full Resume
+//               </Button>
+//             </a>
+//           </div>
+
+// {/*           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+//             <div className="bg-secondary/30 rounded-lg p-6">
+//               <h4 className="font-medium mb-2">Languages</h4>
+//               <ul className="text-sm text-muted-foreground text-left space-y-1">
+//                 <li>C, C++</li>
+//                 <li>JavaScript, TypeScript</li>
+//               </ul>
+//             </div>
+//  */}
+// {/*             <div className="bg-secondary/30 rounded-lg p-6">
+//               <h4 className="font-medium mb-2">DSA & Platforms</h4>
+//               <ul className="text-sm text-muted-foreground text-left space-y-1">
+//                 <li>Proficient in DSA using C++</li>
+//                 <li>Node.js Runtime</li>
+//               </ul>
+//             </div> */}
+
+//           //   <div className="bg-secondary/30 rounded-lg p-6">
+//           //     <h4 className="font-medium mb-2">Frameworks & Databases</h4>
+//           //     <ul className="text-sm text-muted-foreground text-left space-y-1">
+//           //       <li>React, Express, Next.js</li>
+//           //       <li>MongoDB, MySQL</li>
+//           //     </ul>
+//           //   </div>
+//           // </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default Resume;
+import { Download } from "lucide-react";
 import { Button } from "./ui/button";
 import { toast } from "sonner";
 
@@ -28,165 +86,38 @@ const Resume = () => {
   };
 
   return (
-    <>
-      <style>{`
-        /* ================= RESUME SECTION THEME ================= */
-        .resume-section {
-          position: relative;
-          background-color: #0B0F19; /* Void Blue */
-          background-image: radial-gradient(circle at 50% 100%, #172033 0%, #0B0F19 100%);
-          color: #e5e7eb;
-          padding: 100px 0;
-          font-family: 'Inter', sans-serif;
-          overflow: hidden;
-        }
+    <section
+      id="resume"
+      className="bg-gradient-to-b from-background to-background/95 py-16 md:py-20"
+    >
+      <div className="absolute inset-0 bg-gradient-to-b from-background/95 to-background/0" />
+      <div className="section-container">
+        <h2 className="section-title">Resume</h2>
 
-        /* AMBIENT GLOW */
-        .resume-glow {
-          position: absolute;
-          width: 600px;
-          height: 600px;
-          background: radial-gradient(circle, rgba(56, 189, 248, 0.1) 0%, rgba(0,0,0,0) 70%);
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          pointer-events: none;
-          z-index: 0;
-        }
-
-        .section-container {
-          max-width: 1200px;
-          margin: 0 auto;
-          padding: 0 24px;
-          position: relative;
-          z-index: 10;
-        }
-
-        /* RESUME CARD (Scanner Effect) */
-        .resume-card {
-          background: rgba(30, 41, 59, 0.4); /* Glass Slate */
-          border: 1px solid rgba(255, 255, 255, 0.05);
-          backdrop-filter: blur(12px);
-          border-radius: 20px;
-          padding: 40px;
-          max-width: 600px;
-          margin: 0 auto;
-          text-align: center;
-          transition: all 0.3s ease;
-          position: relative;
-          overflow: hidden;
-        }
-
-        .resume-card:hover {
-          border-color: rgba(56, 189, 248, 0.4);
-          box-shadow: 0 0 40px rgba(56, 189, 248, 0.1);
-          transform: translateY(-5px);
-        }
-
-        /* SCANNER ANIMATION */
-        .resume-card::after {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 2px;
-          background: #38BDF8;
-          opacity: 0.5;
-          box-shadow: 0 0 10px #38BDF8;
-          animation: scan 4s ease-in-out infinite;
-        }
-
-        @keyframes scan {
-          0% { top: 0; opacity: 0; }
-          10% { opacity: 1; }
-          90% { opacity: 1; }
-          100% { top: 100%; opacity: 0; }
-        }
-
-        /* TEXT STYLES */
-        .resume-name {
-          font-size: 28px;
-          font-weight: 700;
-          color: #fff;
-          margin-bottom: 8px;
-        }
-
-        .resume-role {
-          font-size: 16px;
-          color: #38BDF8; /* Cyan */
-          font-weight: 500;
-          letter-spacing: 0.5px;
-          margin-bottom: 24px;
-          display: inline-block;
-          padding: 4px 12px;
-          background: rgba(56, 189, 248, 0.1);
-          border-radius: 99px;
-          border: 1px solid rgba(56, 189, 248, 0.2);
-        }
-
-        /* CUSTOM BUTTON OVERRIDE */
-        .download-btn-wrapper button {
-          background-color: #38BDF8;
-          color: #0B0F19;
-          font-weight: 600;
-          border: none;
-          transition: all 0.3s ease;
-          box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
-        }
-
-        .download-btn-wrapper button:hover {
-          background-color: #0ea5e9;
-          box-shadow: 0 0 25px rgba(56, 189, 248, 0.6);
-          transform: scale(1.05);
-        }
-      `}</style>
-
-      <section id="resume" className="resume-section">
-        {/* Ambient Background Glow */}
-        <div className="resume-glow"></div>
-
-        <div className="section-container">
-          <h2 className="text-4xl font-bold text-center mb-4 text-white">
-            Resume
-          </h2>
-          <p className="text-center text-slate-400 mb-12 max-w-2xl mx-auto">
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-lg mb-8 text-muted-foreground">
             Download my resume to learn more about my skills and education.
           </p>
 
-          <div className="resume-card">
-            {/* Decorative Icon */}
-            <div className="mx-auto w-16 h-16 bg-[#38BDF8]/10 rounded-full flex items-center justify-center mb-6 text-[#38BDF8]">
-              <FileText size={32} />
-            </div>
+          <div className="bg-card border border-border rounded-lg p-8 mb-8 flex flex-col items-center">
+            <h3 className="text-2xl font-semibold mb-2">Abhay Kumar</h3>
+            <p className="text-muted-foreground mb-4">
+              Backend Developer | Coder
+            </p>
 
-            <h3 className="resume-name">Abhay Kumar</h3>
-            <span className="resume-role">Backend Developer | Coder</span>
-
-            <div className="flex justify-center gap-6 mb-8 text-sm text-slate-400">
-               <div className="flex items-center gap-2">
-                 <CheckCircle2 size={16} className="text-[#38BDF8]" /> Full Stack
-               </div>
-               <div className="flex items-center gap-2">
-                 <CheckCircle2 size={16} className="text-[#38BDF8]" /> Cloud Native
-               </div>
-            </div>
-
-            <div className="download-btn-wrapper">
-              <Button
-                variant="default"
-                size="lg"
-                className="group w-full sm:w-auto px-8"
-                onClick={handleDownload}
-              >
-                <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
-                Download PDF
-              </Button>
-            </div>
+            <Button
+              variant="default"
+              size="lg"
+              className="group"
+              onClick={handleDownload}
+            >
+              <Download className="mr-2 group-hover:animate-bounce" />
+              Download Full Resume
+            </Button>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
 
