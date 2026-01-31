@@ -62,7 +62,7 @@ const Resume = () => {
           z-index: 10;
         }
 
-        /* RESUME CARD */
+        /* RESUME CARD (Scanner Effect) */
         .resume-card {
           background: rgba(30, 41, 59, 0.4); /* Glass Slate */
           border: 1px solid rgba(255, 255, 255, 0.05);
@@ -83,7 +83,7 @@ const Resume = () => {
           transform: translateY(-5px);
         }
 
-        /* SCANNER LINE ANIMATION */
+        /* SCANNER ANIMATION */
         .resume-card::after {
           content: "";
           position: absolute;
@@ -125,14 +125,7 @@ const Resume = () => {
           border: 1px solid rgba(56, 189, 248, 0.2);
         }
 
-        .resume-desc {
-          color: #94a3b8;
-          margin-bottom: 32px;
-          font-size: 16px;
-          line-height: 1.6;
-        }
-
-        /* CUSTOM BUTTON STYLE OVERRIDE */
+        /* CUSTOM BUTTON OVERRIDE */
         .download-btn-wrapper button {
           background-color: #38BDF8;
           color: #0B0F19;
@@ -154,11 +147,11 @@ const Resume = () => {
         <div className="resume-glow"></div>
 
         <div className="section-container">
-          <h2 className="section-title text-4xl font-bold text-center mb-4 text-white">
+          <h2 className="text-4xl font-bold text-center mb-4 text-white">
             Resume
           </h2>
           <p className="text-center text-slate-400 mb-12 max-w-2xl mx-auto">
-            Ready to collaborate? Download my resume to explore my full professional background and technical skillset.
+            Download my resume to learn more about my skills and education.
           </p>
 
           <div className="resume-card">
@@ -168,7 +161,7 @@ const Resume = () => {
             </div>
 
             <h3 className="resume-name">Abhay Kumar</h3>
-            <span className="resume-role">Backend Developer & Coder</span>
+            <span className="resume-role">Backend Developer | Coder</span>
 
             <div className="flex justify-center gap-6 mb-8 text-sm text-slate-400">
                <div className="flex items-center gap-2">
